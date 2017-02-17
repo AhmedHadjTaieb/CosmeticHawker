@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Profil
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="Modifier()">
+        <ion-icon name="settings"> </ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+
+  <ion-fab bottom center >
+    <button ion-fab style="background-color: #2ec95c;" (click)="openAcceuil()"><ion-icon ios="ios-home" md="md-home" center large></ion-icon></button>
+  </ion-fab>
+
+
+
+<ion-item text-center no-lines class="ion-img">
+  <img class="img" src="assets/images/user.png" >
+</ion-item>
+
+  <ion-title *ngFor="let em of employer | async">
+    <h2> {{em.Nom +"  "+em.Prenom}} </h2>
+  </ion-title>
+
+<ion-item class="ion-item"  padding no-lines *ngFor="let em of employer | async">
+  <h3> CIN : <p>{{em.CIN}}</p></h3>
+
+  <h3> Date de naissence : <p>{{em.naissence}}</p></h3>
+
+  <h3> Tel : <p>{{em.Tel}}</p></h3>
+
+  <h3> Adresse :  <p>{{em.Adresse}}</p> </h3>
+
+  <h3> Derniere Connexion : <p>{{em.Connexion}}</p> </h3>
+
+
+</ion-item>
+
+
+
+
+</ion-content>

@@ -1,0 +1,30 @@
+{
+  "locations": [
+
+    {
+      "title": "Cité la Liberté",
+      "latitude": 34.74041789,
+      "longitude": 10.73845178
+    },
+    {
+      "title": "Café Abou elezz",
+      "latitude": 34.74016663,
+      "longitude": 10.74345678
+    },
+    {
+      "title": "ISIMS",
+      "latitude": 34.83894775,
+      "longitude": 10.75697243
+    },
+    {
+      "title": "Beb Kasba",
+      "latitude": 34.73341302,
+      "longitude": 10.75964391
+    },
+    {
+      "title": "Thyna",
+      "latitude": 34.68601642,
+      "longitude": 10.71905136
+    }
+  ]
+}

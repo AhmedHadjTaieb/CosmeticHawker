@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center>Plan</ion-title>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-fab bottom center >
+    <button ion-fab style="background-color: #2ec95c;" (click)="openAcceuil()"><ion-icon ios="ios-home" md="md-home" center large></ion-icon></button>
+  </ion-fab>
+
+  <ion-header>
+    <ion-navbar color="danger">
+      <ion-title>
+        Map Clusters
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+
+  <ion-content>
+
+    <ion-tabs color="light">
+      <ion-tab [root]="tab1Root" tabTitle="Plan" tabIcon="navigate"></ion-tab>
+      <ion-tab [root]="tab2Root" tabTitle="List" tabIcon="list"></ion-tab>
+    </ion-tabs>
+  </ion-content>
+</ion-content>

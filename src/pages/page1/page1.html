@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Tableau de bord</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-fab bottom center >
+    <button ion-fab style="background-color: #2ec95c;" (click)="openAcceuil()"><ion-icon ios="ios-home" md="md-home" center large></ion-icon></button>
+  </ion-fab>
+
+
+
+
+
+  <ion-fab top center >
+    <button ion-fab style="background-color: #2ec95c;" (click)="open()"><ion-icon name="podium" center large></ion-icon></button>
+  </ion-fab>
+    <ion-content *ngIf="hiddee" (click)="ionViewDidLoad()">
+
+      <ion-card>
+        <ion-card-header>
+          Utilistateur/Vente
+        </ion-card-header>
+        <ion-card-content>
+          <canvas #barCanvas></canvas>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header>
+          Utilistateur/Vente
+        </ion-card-header>
+        <ion-card-content>
+          <canvas #doughnutCanvas></canvas>
+        </ion-card-content>
+      </ion-card>
+
+
+
+    </ion-content>
+
+
+</ion-content>

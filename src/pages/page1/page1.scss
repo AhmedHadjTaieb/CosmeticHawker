@@ -1,0 +1,33 @@
+.ios, .md {
+page-page1 {
+
+  .toolbar-background {
+    background-color: #FF9800;
+  }
+  ion-content{
+
+
+    background: -webkit-linear-gradient(top left, rgba(230, 81, 0, 0.6), rgba(255, 202, 40, 0.6));
+    background: -o-linear-gradient(right bottom, rgba(230, 81, 0, 0.8), rgba(255, 202, 40, 0.6));
+    background: -moz-linear-gradient(right bottom, rgba(230, 81, 0, 0.6), rgba(255, 202, 40, 0.6));
+    background: linear-gradient(to right bottom, rgba(230, 81, 0, 0.6), rgba(255, 202, 40, 0.6));
+
+  }
+
+
+
+
+
+      .scroll-content {
+        background-color: map-get($colors, light);
+      }
+
+      ion-card-header {
+        font-weight: bold;
+      }
+
+
+
+  }
+
+}
